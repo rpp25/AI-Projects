@@ -1,0 +1,10 @@
+FINAL RESULT: False
+Rules inferred: 
+1	LHS: [('Barks', ['Sally']), ('WagsTail', ['x'])], RHS: Dog ['x']
+2	LHS: [('Barks', ['x']), ('WagsTail', ['Sally'])], RHS: Dog ['x']
+3	LHS: [('TooBig', ['Bob']), ('GoodSize', ['y'])], RHS: BetterPet ['y', 'x']
+Facts inferred (includes the rules generated that implies the fact): 
+	LHS: [('Giraffe', ['Bob'])], RHS: TooBig ['Bob']
+	LHS: [('Barks', ['Sally']), ('WagsTail', ['Sally'])], RHS: Dog ['Sally']
+	LHS: [('Dog', ['Sally'])], RHS: GoodSize ['Sally']
+	LHS: [('TooBig', ['Bob']), ('GoodSize', ['Sally'])], RHS: BetterPet ['Sally', 'Bob']

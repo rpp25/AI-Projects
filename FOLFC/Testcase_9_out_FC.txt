@@ -1,0 +1,19 @@
+FINAL RESULT: False
+Rules inferred: 
+1	LHS: [('People', ['Marcus']), ('Assassinate', ['x', 'y']), ('Ruler', ['y'])], RHS: Traitor ['x']
+2	LHS: [('People', ['Caesar']), ('Assassinate', ['x', 'y']), ('Ruler', ['y'])], RHS: Traitor ['x']
+3	LHS: [('People', ['x']), ('Assassinate', ['Marcus', 'Caesar']), ('Ruler', ['y'])], RHS: Traitor ['x']
+4	LHS: [('People', ['x']), ('Assassinate', ['x', 'y']), ('Ruler', ['Caesar'])], RHS: Traitor ['x']
+5	LHS: [('Roman', ['Marcus']), ('Traitor', ['x']), ('Assassinate', ['x', 'y'])], RHS: Hate ['x', 'y']
+6	LHS: [('Roman', ['x']), ('Traitor', ['x']), ('Assassinate', ['Marcus', 'Caesar'])], RHS: Hate ['x', 'y']
+7	LHS: [('People', ['Marcus']), ('Assassinate', ['Marcus', 'Caesar']), ('Ruler', ['y'])], RHS: Traitor ['x']
+8	LHS: [('People', ['Marcus']), ('Assassinate', ['x', 'y']), ('Ruler', ['Caesar'])], RHS: Traitor ['x']
+9	LHS: [('People', ['Caesar']), ('Assassinate', ['x', 'y']), ('Ruler', ['Caesar'])], RHS: Traitor ['x']
+10	LHS: [('People', ['x']), ('Assassinate', ['Marcus', 'Caesar']), ('Ruler', ['Caesar'])], RHS: Traitor ['x']
+11	LHS: [('Roman', ['Marcus']), ('Traitor', ['x']), ('Assassinate', ['Marcus', 'Caesar'])], RHS: Hate ['x', 'y']
+Facts inferred (includes the rules generated that implies the fact): 
+	LHS: [('Pompeian', ['Marcus'])], RHS: Roman ['Marcus']
+	LHS: [('Man', ['Marcus'])], RHS: People ['Marcus']
+	LHS: [('Man', ['Caesar'])], RHS: People ['Caesar']
+	LHS: [('People', ['Marcus']), ('Assassinate', ['Marcus', 'Caesar']), ('Ruler', ['Caesar'])], RHS: Traitor ['Marcus']
+	LHS: [('Roman', ['Marcus']), ('Traitor', ['Marcus']), ('Assassinate', ['Marcus', 'Caesar'])], RHS: Hate ['Marcus', 'Caesar']

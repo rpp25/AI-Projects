@@ -1,0 +1,8 @@
+FINAL RESULT: True
+Rules inferred: 
+1	LHS: [('Instrument', ['I1']), ('Musician', ['x'])], RHS: Plays ['x', 'y']
+2	LHS: [('Instrument', ['y']), ('Musician', ['Grace'])], RHS: Plays ['x', 'y']
+3	LHS: [('Instrument', ['I1']), ('Plays', ['x', 'y'])], RHS: NotToneDeaf ['x']
+Facts inferred (includes the rules generated that implies the fact): 
+	LHS: [('Instrument', ['I1']), ('Musician', ['Grace'])], RHS: Plays ['Grace', 'I1']
+	Final Conclusion: LHS: [('Instrument', ['I1']), ('Plays', ['Grace', 'I1'])], RHS: NotToneDeaf ['Grace']
